@@ -94,4 +94,24 @@ public class Player
         return _wins;
     }
 
+    /**
+     * set the the outcome of this {@link Player#draw()} to a fixed result.
+     * 
+     * @param output
+     *            the fixed output to set
+     */
+    public void setDrawOutput(Output output)
+    {
+        _drawOutput = output;
+    }
+
+    /**
+     * Resets the outcome of the {@link Player#draw()} method to random output
+     * again.
+     */
+    public void resetDrawOutput()
+    {
+        _drawOutput = null;
+    }
+
 }
