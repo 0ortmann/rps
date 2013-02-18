@@ -8,5 +8,5 @@ package rps;
  */
 public enum Output
 {
-    Rock, Paper, Scisorrs;
+    Rock, Paper, Scissors;
 }
