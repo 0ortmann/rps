@@ -51,17 +51,13 @@ void : resetDrawOutput()</string>
   </void>
   <void method="addNode">
    <object class="com.horstmann.violet.ClassNode" id="ClassNode1">
-    <void property="attributes">
-     <void property="text">
-      <string>_playerList</string>
-     </void>
-    </void>
     <void property="methods">
      <void property="text">
       <string>Player : playGame(Player, Player)
-List&lt;Player&gt; : playMultipleGames()
+List&lt;Player&gt; : playMultipleGames(Player, Player, int)
 void : score(Player)
-void : printTotalScores(List&lt;Player&gt;, int)
+void : printTotalScores(Player, int)
+void : printResults(Player, Player, int)
 </string>
      </void>
     </void>
@@ -98,15 +94,16 @@ void : printTotalScores(List&lt;Player&gt;, int)
      <void property="text">
       <string>Player _player1
 Player _player2
-Player _winner
-List&lt;Output&gt; _triumpher
+HashMap&lt;Output, Output&gt; _triumpher
 </string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
       <string>Player : play()
-int : determineWin(Output, Output)</string>
+int : determineWin(Output, Output)
+void : adjustJustsoftwareConfiguration()
+</string>
      </void>
     </void>
     <void property="name">
