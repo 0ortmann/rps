@@ -73,8 +73,16 @@ public class Game
         Output out2 = _player2.draw();
 
         int outcome = determineWin(out1, out2);
-
-        return outcome == 0 ? null : outcome == 1 ? _player1 : _player2;
+        
+        if(outcome == 0)
+        {
+            return null;
+        }
+        else if(outcome == 1)
+        {
+            return _player1;
+        }
+        return _player2;
 
     }
 
