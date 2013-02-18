@@ -61,7 +61,7 @@ public class Player
         Random randomGenerator = new Random();
 
         // draw a random int between 0 and the number of possible outputs
-        int random = randomGenerator.nextInt(possibilities.length - 1);
+        int random = randomGenerator.nextInt(possibilities.length);
 
         return possibilities[random];
     }
