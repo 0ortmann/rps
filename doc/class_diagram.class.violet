@@ -7,15 +7,19 @@
      <void property="text">
       <string>String _name
 int _wins
+Output _drawOutput
 </string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
       <string>Output : draw()
+Output : drawRandom()
 void : setDrawOutput(Output output)
 String : getName()
-int : getWins()</string>
+int : getNumberOfWins()
+void : incrementWins()
+void : resetDrawOutput()</string>
      </void>
     </void>
     <void property="name">
