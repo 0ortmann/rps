@@ -44,7 +44,7 @@ public class GameTest
     }
 
     /**
-     * Testmethod for {@link Game#Game(Player, Player)}
+     * Testmethod for {@link Game#Game(rps.Player, rps.Player)}
      */
     @Test
     public void testGame()
