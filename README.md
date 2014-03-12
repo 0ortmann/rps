@@ -1,3 +1,3 @@
----Rock Paper Scissor implementation for application talk "Justsoftware"---
+Code sample for general application purpose.
 Copyright by Felix Ortmann
 
