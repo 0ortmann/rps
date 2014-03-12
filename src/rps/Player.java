@@ -39,7 +39,6 @@ public class Player {
     public Output draw() {
         if (_drawOutput != null) {
             return _drawOutput;
-            Start the applications, args not needed here.
         }
         return drawRandom();
 

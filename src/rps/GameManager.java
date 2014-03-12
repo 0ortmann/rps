@@ -1,6 +1,7 @@
 package rps;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Manages {@link Player}s who praticipate in {@link Game}s. Is able to start
@@ -47,7 +48,7 @@ public class GameManager
      * @return A list of winning {@link Player}s, entries may null if a tie
      *         happened.
      */
-    public ArrayList<Player> playMultipleGames(Player player1, Player player2,
+    public List<Player> playMultipleGames(Player player1, Player player2,
             int count)
     {
         ArrayList<Player> returnList = new ArrayList<>();

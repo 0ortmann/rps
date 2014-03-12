@@ -5,7 +5,7 @@ package test;
 
 import static org.junit.Assert.assertEquals;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -61,7 +61,7 @@ public class GameManagerTest
     public void testPlayMultipleGames()
     {
         // play 100 games and test that the returnal is correct
-        ArrayList<Player> winPlayerList = _underTest.playMultipleGames(
+        List<Player> winPlayerList = _underTest.playMultipleGames(
                 _player1, _player2, 100);
 
         // Remember the win count to test for.
