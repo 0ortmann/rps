@@ -102,7 +102,7 @@ HashMap&lt;Output, Output&gt; _triumpher
      <void property="text">
       <string>Player : play()
 int : determineWin(Output, Output)
-void : adjustJustsoftwareConfiguration()
+void : adjustConfiguration()
 </string>
      </void>
     </void>
