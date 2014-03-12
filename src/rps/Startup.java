@@ -1,17 +1,20 @@
 package rps;
 
 /**
- * Start Up the Rock-Paper-Scissors Application with pre-set {@link Player}s
- * according to the Justsoftware definitions.
+ * Start Up the Rock-Paper-Scissors Application with pre-set {@link Player}s.
+ * The first player will always draw paper, the other is random.
  * 
  * @author Felix Ortmann
  * 
  */
 
-//Random Comment 
 public class Startup
 {
 
+    /**
+     * Start the applications, args not needed here.
+     * @param args
+     */
     public static void main(String[] args)
     {
         // Set up Player A, always draw Paper
@@ -24,7 +27,7 @@ public class Startup
         // Start the manager
         GameManager manager = new GameManager();
 
-        // play 100 games like wanted by Justsoftware
+        // play 100 games
         manager.playMultipleGames(player1, player2, 100);
 
     }

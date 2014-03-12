@@ -5,12 +5,10 @@ import java.util.Random;
 /**
  * A Player who can draw an {@link Output} in order to prticipate in a
  * Rock-Paper-Scissors game.
- * 
+ *
  * @author Felix Ortmann
- * 
  */
-public class Player
-{
+public class Player {
     // name of this Player
     private String _name;
 
@@ -24,12 +22,10 @@ public class Player
      * participate in Rock-Paper-Scissor games. By default, the {@link Player}
      * will draw random output for such a game, but the draw-outcome can also be
      * fixed to one value.
-     * 
-     * @param name
-     *            The name of this {@link Player}
+     *
+     * @param name The name of this {@link Player}
      */
-    public Player(String name)
-    {
+    public Player(String name) {
         _name = name;
         _wins = 0;
         _drawOutput = null;
@@ -37,14 +33,13 @@ public class Player
 
     /**
      * The player draws a possible {@link Output} of a Rock-Paper-Scissor game
-     * 
+     *
      * @return an {@link Output} of a Rock-Paper-Scissor game
      */
-    public Output draw()
-    {
-        if (_drawOutput != null)
-        {
+    public Output draw() {
+        if (_drawOutput != null) {
             return _drawOutput;
+            Start the applications, args not needed here.
         }
         return drawRandom();
 
@@ -52,11 +47,10 @@ public class Player
 
     /**
      * Returns a randomly drawn Output of a possible Rock-Paper-Scissor game.
-     * 
+     *
      * @return a randomly generated {@link Output} of a Rock-Paper-Scissor game.
      */
-    private Output drawRandom()
-    {
+    private Output drawRandom() {
         Output[] possibilities = Output.values();
         Random randomGenerator = new Random();
 
@@ -68,40 +62,35 @@ public class Player
 
     /**
      * Returns the name of this {@link Player}.
-     * 
+     *
      * @return the name of this {@link Player}.
      */
-    public String getName()
-    {
+    public String getName() {
         return _name;
     }
 
     /**
      * Raises the number of wins of this {@link Player} by 1.
      */
-    public void incrementWins()
-    {
+    public void incrementWins() {
         _wins += 1;
     }
 
     /**
      * Returns the number of wins this {@link Player} has totally had.
-     * 
+     *
      * @return the number of total wins.
      */
-    public int getNumberOfWins()
-    {
+    public int getNumberOfWins() {
         return _wins;
     }
 
     /**
      * set the the outcome of this {@link Player#draw()} to a fixed result.
-     * 
-     * @param output
-     *            the fixed output to set
+     *
+     * @param output the fixed output to set
      */
-    public void setDrawOutput(Output output)
-    {
+    public void setDrawOutput(Output output) {
         _drawOutput = output;
     }
 
@@ -109,8 +98,7 @@ public class Player
      * Resets the outcome of the {@link Player#draw()} method to random output
      * again.
      */
-    public void resetDrawOutput()
-    {
+    public void resetDrawOutput() {
         _drawOutput = null;
     }
 

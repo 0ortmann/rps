@@ -102,7 +102,7 @@ public class GameManager
         printTotalScores(player2, count);
         int ties = count - player1.getNumberOfWins()
                 - player2.getNumberOfWins();
-        System.out.println("Tie: " + ties + " of " + count + " games.");
+        System.out.println("Tie(s): " + ties + " of " + count + " games.");
     }
 
 }

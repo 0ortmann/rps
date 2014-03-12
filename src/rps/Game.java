@@ -14,7 +14,7 @@ public class Game
     /**
      * the triumpher map contains the correlation of triumphing elements in the
      * given {@link Game}. The key adresses the loosing {@link Output} and the
-     * value return its triumpher, meaning the Output whitch is beating "key".
+     * value represents its triumpher, meaning the {@link Output} which beats "key".
      */
     private HashMap<Output, Output> _triumpher;
 
@@ -24,7 +24,7 @@ public class Game
 
     /**
      * Create a new {@link Game}. A {@link Game} by default operates based on
-     * the win conditions pre-given by Justsoftware.
+     * the win conditions of Rock-Paper-Scissor.
      * 
      * @param player1
      *            the first participant in this {@link Game}
@@ -35,27 +35,27 @@ public class Game
     {
         _player1 = player1;
         _player2 = player2;
-        adjustJustsoftwareConfigurations();
+        adjustConfigurations();
     }
 
     /**
-     * Load the given win conditions wanted from JustsoftwareAG into the game's
+     * Load the given win conditions based on Rock-Paper-Scissors into the game's
      * triumpher correlations.
      */
-    private void adjustJustsoftwareConfigurations()
+    private void adjustConfigurations()
     {
-        // fixed number due to win definitions by Justsoftware
+        // fixed number due to win definitions
         _triumpher = new HashMap<>(3);
 
-        // fill in the triumphers according to Justsoftware's preferred order:
+        // fill in the triumphers:
 
-        // scissors beat paper
+        // paper is beaten by scissors
         _triumpher.put(Output.Paper, Output.Scissors);
 
-        // paper beats rock
+        // rock is beaten by paper
         _triumpher.put(Output.Rock, Output.Paper);
 
-        // rock beats scissors
+        // scissors are beaten by rock
         _triumpher.put(Output.Scissors, Output.Rock);
 
     }
